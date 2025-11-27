@@ -7,6 +7,12 @@
     角度修复 根据骨骼动画制作者 可能会导致动画未能对齐 
 
     先 float angles[3] = {0.0, 90.0, 0.0}; 先声明一个角度 之后在用api修复角度
+
+    API使用方法 
+    1. 将编译好的smx文件放入插件文件夹
+    2. 将API文件 HanAnimeAPI.inc 放入 include 文件夹
+    3. 在自己需要设置动画的插件内 #include <HanAnimeAPI>
+    4. 根据API功能随意使用吧
  
  * 播放第三人称外部动画
  *
