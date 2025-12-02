@@ -13,7 +13,12 @@
     2. 将API文件 HanAnimeAPI.inc 放入 include 文件夹
     3. 在自己需要设置动画的插件内 #include <HanAnimeAPI>
     4. 根据API功能随意使用吧
- 
+
+    cavr
+    anime_hideweapon 1  是否隐藏武器实体, 1隐藏 0 不隐藏 测试用
+    anime_hideplayer 1 是否隐藏玩家本体, 1隐藏 0 不隐藏 测试用
+    anime_predictfix 0 默认0 非预测修复, 默认关闭, 打开后将修复 关闭预测带来的延迟,动画错误(可选项)
+
  * 播放第三人称外部动画
  *
  * @param client        玩家
@@ -21,9 +26,10 @@
  * @param duration      持续时间
  * @param angAdjust     角度偏移 {pitch, yaw, roll}
  * @param selfVisible   玩家是否能看到自己的动画
+ * @param hideWeapon   玩家是否能看到自己的武器附加
  * @param loop   动画循环
 
-   native void Han_SetPlayerAnime(int client, const char[] animName, float duration,const float angAdjust[3], bool selfVisible = false, bool loop);
+   native void Han_SetPlayerAnime(int client, const char[] animName, float duration,const float angAdjust[3], bool selfVisible = false, bool hideWeapon = false, bool loop);
 
  * 删除动画实体 *
 
