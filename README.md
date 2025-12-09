@@ -1,3 +1,10 @@
+<div align="center">
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Z8Z31PY52N)
+  
+
+</div>
+
     CS起源创建第三人称动画实体附加API
  
     轻松创建第三人称动画, 滑铲,奔跑,踢腿 等等.
